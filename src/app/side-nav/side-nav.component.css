@@ -1,0 +1,9 @@
+.side-nav a {
+  color: rgba(0,0,0,.65);
+  font-size: 90%;
+}
+.side-nav .is-active {
+  font-weight: 600;
+  color: rgba(0,0,0,.85);
+  background-color: transparent;
+}
