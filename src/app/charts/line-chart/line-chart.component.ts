@@ -8,7 +8,7 @@ import * as d3 from 'd3';
   styleUrls: ['./line-chart.component.css']
 })
 export class LineChartComponent implements OnInit {
-	@ViewChild('chart')
+	@ViewChild('chart', { static: true })
 	private chartContainer: ElementRef;
 
 	private width: number;

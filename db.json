@@ -1,0 +1,79 @@
+{
+	"productsList":["goutham", "b1", "c1"],
+	"goutham":{
+		"linesData":[{
+	    "name": "Func FPY",
+	    "color": "#ff5722",
+	    "data": [
+	      {"x": "Jan1", "y": 98},
+	      {"x": "Jan2", "y": 95},
+	      {"x": "Jan3", "y": 95.5},
+	      {"x": "Jan4", "y": 94},
+	      {"x": "Jan5", "y": 93},
+	      {"x": "Jan6", "y": 94.5},
+	      {"x": "Jan7", "y": 94}
+	    ]
+	  },{
+	    "name": "Cos FPY",
+	    "color": "#5b6abf",
+	    "data": [
+	      {"x": "Jan1", "y": 95},
+	      {"x": "Jan2", "y": 94},
+	      {"x": "Jan3", "y": 95.5},
+	      {"x": "Jan4", "y": 93},
+	      {"x": "Jan5", "y": 92},
+	      {"x": "Jan6", "y": 94},
+	      {"x": "Jan7", "y": 94.5}
+	    ]
+	  },{
+	    "name": "Final FPY",
+	    "color": "#aa46bb",
+	    "data": [
+	      {"x": "Jan1", "y": 90},
+	      {"x": "Jan2", "y": 89},
+	      {"x": "Jan3", "y": 88},
+	      {"x": "Jan4", "y": 85},
+	      {"x": "Jan5", "y": 84},
+	      {"x": "Jan6", "y": 89},
+	      {"x": "Jan7", "y": 88}
+	    ]
+	  }],
+		"stationFailureData":[{
+	    "name": "COMBO2",
+	    "color": "#34a853",
+	    "data": [
+	      {"x": "Jan1", "y": 4.3},
+	      {"x": "Jan2", "y": 4.1},
+	      {"x": "Jan3", "y": 4.5},
+	      {"x": "Jan4", "y": 4},
+	      {"x": "Jan5", "y": 4.2},
+	      {"x": "Jan6", "y": 4.3},
+	      {"x": "Jan7", "y": 4.5}
+	    ]
+	  },{
+	    "name": "AUTOCOMBO",
+	    "color": "#71e1e8",
+	    "data": [
+	      {"x": "Jan1", "y": 3.3},
+	      {"x": "Jan2", "y": 3.1},
+	      {"x": "Jan3", "y": 3.5},
+	      {"x": "Jan4", "y": 3},
+	      {"x": "Jan5", "y": 3.2},
+	      {"x": "Jan6", "y": 3.3},
+	      {"x": "Jan7", "y": 3.5}
+	    ]
+	  },{
+	    "name": "COS6",
+	    "color": "#fd7448",
+	    "data": [
+	      {"x": "Jan1", "y": 2.3},
+	      {"x": "Jan2", "y": 2.1},
+	      {"x": "Jan3", "y": 2.5},
+	      {"x": "Jan4", "y": 2},
+	      {"x": "Jan5", "y": 2.2},
+	      {"x": "Jan6", "y": 2.3},
+	      {"x": "Jan7", "y": 2.5}
+	    ]
+	  }]
+	}
+}
