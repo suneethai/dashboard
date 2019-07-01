@@ -2,7 +2,7 @@
 
 <div class="container-fluid zeroPadding">
   <div class="row">
-    <div [ngClass] = "isOpen ? 'col-md-2' : 'close'">
+    <div class="sideNavContainer" [ngClass] = "isOpen ? 'col-md-2' : 'close'">
       <app-side-nav></app-side-nav>
     </div>
     <div [ngClass] = "isOpen ? 'col-md-10' : 'col-md-12'">

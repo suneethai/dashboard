@@ -3,6 +3,19 @@
   color: #fff;
 }
 
-.navbar a {
+.navbar-brand {
+	margin: 0 20px;
+}
+
+.navbar .navbar-brand, 
+.navbar-light .navbar-nav .nav-link {
   color: #fff;
+}
+
+.sideNavBtn {
+	border: 0;
+  background: transparent;
+  color: #fff;
+  margin: 0 10px;
+  font-size: 25px;
 }

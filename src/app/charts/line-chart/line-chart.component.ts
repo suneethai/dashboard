@@ -1,5 +1,6 @@
 import { Component, OnInit, ElementRef, Input, OnChanges, ViewChild, ViewEncapsulation } from '@angular/core';
 import * as d3 from 'd3';
+import { AppService } from '../../app.service';
 
 @Component({
   selector: 'app-line-chart',
@@ -20,10 +21,12 @@ export class LineChartComponent implements OnInit {
 	private svg: any;
 	private g: any;
 
-  constructor() { }
+  constructor(private appService: AppService) { }
 
   ngOnInit() {
 
+  	this.getLinesStationsData();
+  	
   	let element = this.chartContainer.nativeElement;
 
   	this.svg = d3.select(element);
@@ -80,6 +83,12 @@ export class LineChartComponent implements OnInit {
 		    .attr("cx", function(d, i) { return xScale(i) })
 		    .attr("cy", function(d) { return yScale(d.y) })
 		    .attr("r", 5);
+	}
+
+	getLinesStationsData() {
+		this.appService.change.subscribe(data => {
+      console.log(data)
+    });
 	}
 
 }

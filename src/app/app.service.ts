@@ -4,11 +4,13 @@ import { HttpClient } from '@angular/common/http';
 
 @Injectable()
 export class AppService {
-	const API_URL = environment.apiUrl;
+	private ROOT_URL = environment.apiUrl;
 
   isOpen = true;
+  selectedProduct = '';
 
   @Output() change: EventEmitter<boolean> = new EventEmitter();
+  @Output() updateLinesStations: EventEmitter<Object[]> = new EventEmitter();
 
   constructor(private http: HttpClient){}
 
@@ -18,11 +20,19 @@ export class AppService {
   }
 
   getProductsList() {
-
+  	return this.http.get<string[]>(this.ROOT_URL+'/productsList');
   }
 
-  getLinesStationsData() {
-  	
+  getLinesStationsData(product) {
+    this.http.get<Object[]>(this.ROOT_URL+'/'+product).subscribe(data => {
+
+    });
+    //this.updateLinesStations.emit(data);
+  }
+
+  updateProduct(product) {
+    this.selectedProduct = product;
+    this.getLinesStationsData(product);
   }
 
 }

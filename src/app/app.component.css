@@ -4,3 +4,7 @@
 .close {
   display: none;
 }
+
+.sideNavContainer {
+	padding: 35px 0px 10px 35px;
+}
